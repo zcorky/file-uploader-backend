@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  app:
+    restart: always
+    build: .
+    environment:
+      - ACCESS_KEY_ID= # <YOUR ACCESS_KEY_ID>
+      - ACCESS_KEY_SECRET= # <YOUR ACCESS_KEY_SECRET>
+      - BUCKET= # <YOUR BUCKET>
+      - ENDPOINT= # <YOUR ENDPOINT>
+    ports:
+      - 4444:8080
