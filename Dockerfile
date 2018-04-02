@@ -10,8 +10,7 @@ COPY router.js /app
 COPY yarn.lock /app
 COPY .babelrc /app
 
-RUN npm i -g yarn
-RUN yarn
+RUN npm i
 
 EXPOSE 8080
 
