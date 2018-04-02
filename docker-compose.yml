@@ -3,7 +3,7 @@ version: "3"
 services:
   app:
     restart: always
-    build: .
+    image: whatwewant/file-uploader-backend
     environment:
       - ACCESS_KEY_ID= # <YOUR ACCESS_KEY_ID>
       - ACCESS_KEY_SECRET= # <YOUR ACCESS_KEY_SECRET>
